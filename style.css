@@ -47,3 +47,29 @@ div {
 	max-width: 85%;
     height: 55%;
 }
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em; /* Smaller heading for mobile */
+    }
+    .subtitle {
+        font-size: 1em;
+    }
+    .image-container {
+        margin-bottom: 30px; /* Reduced space on mobile */
+    }
+    .letter-image-container img {
+        max-width: 80%; /* Slightly smaller image on mobile */
+    }
+}
+
+/* Ensure body flex works better on mobile */
+@media (max-width: 480px) {
+    body {
+        display: block; /* Switch to block for very small screens */
+        padding-top: 60px; /* Account for potential status bar */
+    }
+    .container {
+        padding: 10px;
+    }
+}
