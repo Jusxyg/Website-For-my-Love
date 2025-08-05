@@ -39,30 +39,24 @@ h1 {
 
 #changeimg {
     max-width: 50%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
+    height: 50%;
 }
 
 .letter-cont {
-    margin-top: 100px;
+    margin-top: 300px;
 }
 
 #letterimg {
-    max-width: 60%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
+    max-width: 55%;
+    height: 55%;
 }
 
 .music-cont {
-    margin-top: 100px;
+    margin-top: 300px;
     margin-bottom: 50px;
 }
 
 #musid {
-    max-width: 60%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
+    max-width: 55%;
+    height: 55%;
 }
