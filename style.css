@@ -17,89 +17,83 @@ body {
     width: 100%;
     max-width: 1200px; /* Max width for desktop */
     margin: 0 auto; /* Center on desktop */
-    padding: 20px 10px;
+    padding: 30px 20px; /* Increased padding for better spacing */
     box-sizing: border-box;
 }
 
 h1 {
-    font-size: clamp(2em, 5vw, 3em); /* Responsive font size */
-    margin: 0 0 10px;
+    font-size: clamp(2.5em, 6vw, 4em); /* Larger and more responsive */
+    margin: 0 0 15px;
     color: #000;
     word-break: break-word;
 }
 
 .subtitle, .letter-text, .music-text {
-    font-size: clamp(1em, 2.5vw, 1.2em); /* Responsive font size */
-    margin: 0 0 20px;
+    font-size: clamp(1.2em, 3vw, 1.5em); /* Larger and more responsive */
+    margin: 0 0 25px;
     color: #666;
     word-break: break-word;
 }
 
-.img-cont {
-    margin-top: 20px;
+.img-cont, .letter-cont, .music-cont {
+    margin-top: 40px; /* Consistent spacing */
 }
 
-#changeimg {
-    max-width: 50%; /* Adjusted for desktop */
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
-
-.letter-cont {
-    margin-top: 100px; /* Consistent spacing */
-}
-
-#letterimg {
+#changeimg, .letter-image img, .music-image img {
     max-width: 60%; /* Adjusted for desktop */
     height: auto;
     display: block;
     margin: 0 auto;
+    border-radius: 10px; /* Optional: for a softer look */
+}
+
+.letter-cont, .music-cont {
+    padding: 20px; /* Added padding around letter and music sections */
+    background-color: #f9f9f9; /* Light background for contrast */
+    border-radius: 10px; /* Rounded corners */
+    margin-bottom: 20px; /* Space at the bottom */
 }
 
 .music-cont {
-    margin-top: 100px; /* Consistent spacing */
-    margin-bottom: 50px;
-}
-
-#musid {
-    max-width: 60%; /* Adjusted for desktop */
-    height: auto;
-    display: block;
-    margin: 0 auto;
+    margin-bottom: 50px; /* Extra space at the bottom */
 }
 
 /* Tablet and smaller screens (up to 1024px) */
 @media (max-width: 1024px) {
-    .img-cont #changeimg,
-    .letter-cont #letterimg,
-    .music-cont #musid {
+    .main-cont {
+        padding: 25px 15px;
+    }
+    #changeimg, .letter-image img, .music-image img {
         max-width: 70%;
     }
+    .img-cont, .letter-cont, .music-cont {
+        margin-top: 30px;
+    }
     .letter-cont, .music-cont {
-        margin-top: 80px;
+        padding: 15px;
     }
 }
 
 /* Mobile-specific adjustments (up to 768px) */
 @media (max-width: 768px) {
     .main-cont {
-        padding: 15px 5px;
+        padding: 20px 10px;
     }
     h1 {
-        font-size: clamp(1.5em, 5vw, 2em);
+        font-size: clamp(2em, 6vw, 2.5em);
     }
     .subtitle, .letter-text, .music-text {
-        font-size: clamp(0.9em, 2.5vw, 1em);
+        font-size: clamp(1em, 3vw, 1.2em);
     }
-    .img-cont #changeimg,
-    .letter-cont #letterimg,
-    .music-cont #musid {
+    #changeimg, .letter-image img, .music-image img {
         max-width: 90%;
-        max-height: 300px; /* Limit height on mobile */
+        max-height: 400px; /* Increased height limit */
+    }
+    .img-cont, .letter-cont, .music-cont {
+        margin-top: 25px;
     }
     .letter-cont, .music-cont {
-        margin-top: 50px;
+        padding: 10px;
     }
 }
 
@@ -109,21 +103,23 @@ h1 {
         padding-top: 60px; /* Account for status bar */
     }
     .main-cont {
-        padding: 10px;
+        padding: 15px 5px;
     }
     h1 {
-        font-size: clamp(1.2em, 5vw, 1.5em);
+        font-size: clamp(1.5em, 6vw, 2em);
     }
     .subtitle, .letter-text, .music-text {
-        font-size: clamp(0.8em, 2.5vw, 0.9em);
+        font-size: clamp(0.9em, 3vw, 1.1em);
     }
-    .img-cont #changeimg,
-    .letter-cont #letterimg,
-    .music-cont #musid {
+    #changeimg, .letter-image img, .music-image img {
         max-width: 95%;
-        max-height: 250px;
+        max-height: 350px; /* Adjusted height limit */
+    }
+    .img-cont, .letter-cont, .music-cont {
+        margin-top: 20px;
     }
     .letter-cont, .music-cont {
-        margin-top: 30px;
+        padding: 8px;
+        margin-bottom: 15px;
     }
 }
