@@ -1,0 +1,49 @@
+@font-face {
+    font-family: 'cusfont';
+    src: url('font/myfont.otf') format('opentype'); /* Adjust path and format */
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #fff;
+    font-family: 'cusfont', Arial;
+}
+
+div {
+	text-align: center;
+}
+
+
+.img-cont {
+	margin-top: 20px;
+}
+
+#changeimg {
+    max-width: 40%;
+    height: 40%;
+}
+
+.letter-cont {
+	margin-top: 300px;
+}
+
+#letterimg {
+	max-width: 85%;
+    height: 55%;
+}
+
+.music-cont {
+	margin-top: 250px;
+	margin-bottom: 100px;
+}
+
+#musid {
+	max-width: 85%;
+    height: 55%;
+}
