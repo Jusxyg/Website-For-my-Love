@@ -1,75 +1,129 @@
 @font-face {
     font-family: 'cusfont';
-    src: url('font/myfont.otf') format('opentype'); /* Adjust path and format */
-
+    src: url('font/myfont.otf') format('opentype');
 }
 
 body {
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     min-height: 100vh;
     background-color: #fff;
-    font-family: 'cusfont', Arial;
+    font-family: 'cusfont'; /* Custom font only */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
-div {
-	text-align: center;
+.main-cont {
+    text-align: center;
+    width: 100%;
+    max-width: 1200px; /* Max width for desktop */
+    margin: 0 auto; /* Center on desktop */
+    padding: 20px 10px;
+    box-sizing: border-box;
 }
 
+h1 {
+    font-size: clamp(2em, 5vw, 3em); /* Responsive font size */
+    margin: 0 0 10px;
+    color: #000;
+    word-break: break-word;
+}
+
+.subtitle, .letter-text, .music-text {
+    font-size: clamp(1em, 2.5vw, 1.2em); /* Responsive font size */
+    margin: 0 0 20px;
+    color: #666;
+    word-break: break-word;
+}
 
 .img-cont {
-	margin-top: 20px;
+    margin-top: 20px;
 }
 
 #changeimg {
-    max-width: 40%;
-    height: 40%;
+    max-width: 50%; /* Adjusted for desktop */
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
 .letter-cont {
-	margin-top: 300px;
+    margin-top: 100px; /* Consistent spacing */
 }
 
 #letterimg {
-	max-width: 85%;
-    height: 55%;
+    max-width: 60%; /* Adjusted for desktop */
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
 .music-cont {
-	margin-top: 250px;
-	margin-bottom: 100px;
+    margin-top: 100px; /* Consistent spacing */
+    margin-bottom: 50px;
 }
 
 #musid {
-	max-width: 85%;
-    height: 55%;
+    max-width: 60%; /* Adjusted for desktop */
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
+/* Tablet and smaller screens (up to 1024px) */
+@media (max-width: 1024px) {
+    .img-cont #changeimg,
+    .letter-cont #letterimg,
+    .music-cont #musid {
+        max-width: 70%;
+    }
+    .letter-cont, .music-cont {
+        margin-top: 80px;
+    }
+}
+
+/* Mobile-specific adjustments (up to 768px) */
 @media (max-width: 768px) {
+    .main-cont {
+        padding: 15px 5px;
+    }
     h1 {
-        font-size: 2em; /* Smaller heading for mobile */
+        font-size: clamp(1.5em, 5vw, 2em);
     }
-    .subtitle {
-        font-size: 1em;
+    .subtitle, .letter-text, .music-text {
+        font-size: clamp(0.9em, 2.5vw, 1em);
     }
-    .image-container {
-        margin-bottom: 30px; /* Reduced space on mobile */
+    .img-cont #changeimg,
+    .letter-cont #letterimg,
+    .music-cont #musid {
+        max-width: 90%;
+        max-height: 300px; /* Limit height on mobile */
     }
-    .letter-image-container img {
-        max-width: 80%; /* Slightly smaller image on mobile */
+    .letter-cont, .music-cont {
+        margin-top: 50px;
     }
 }
 
-/* Ensure body flex works better on mobile */
+/* Very small screens (up to 480px) */
 @media (max-width: 480px) {
     body {
-        display: block; /* Switch to block for very small screens */
-        padding-top: 60px; /* Account for potential status bar */
+        padding-top: 60px; /* Account for status bar */
     }
-    .container {
+    .main-cont {
         padding: 10px;
+    }
+    h1 {
+        font-size: clamp(1.2em, 5vw, 1.5em);
+    }
+    .subtitle, .letter-text, .music-text {
+        font-size: clamp(0.8em, 2.5vw, 0.9em);
+    }
+    .img-cont #changeimg,
+    .letter-cont #letterimg,
+    .music-cont #musid {
+        max-width: 95%;
+        max-height: 250px;
+    }
+    .letter-cont, .music-cont {
+        margin-top: 30px;
     }
 }
