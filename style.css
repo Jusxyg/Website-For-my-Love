@@ -25,8 +25,8 @@ div {
 }
 
 #changeimg {
-    max-width: 35%;
-    height: 35%;
+    max-width: 30%;
+    height: 30%;
 }
 
 .letter-cont {
@@ -34,8 +34,8 @@ div {
 }
 
 #letterimg {
-    max-width: 70%;
-    height: 50%;
+    max-width: 55%;
+    height: 40%;
 }
 
 .music-cont {
@@ -44,6 +44,6 @@ div {
 }
 
 #musid {
-    max-width: 65%;
-    height: 50%;
+    max-width: 55%;
+    height: 45%;
 }
