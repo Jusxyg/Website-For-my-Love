@@ -51,5 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
     updateCountdown(); // Initial call
     setInterval(updateCountdown, 1000);
 
+    
+
 });
 

@@ -5,16 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>For Love</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        .nav-cont a {
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        body {
+            scroll-behavior: smooth;
+            overflow-x: hidden;
+        }
+    </style>
 </head>
 <body>
 
-    <script src="script.js"></script>
     <div class="main-cont">
         <div id="tpmain"></div>
         <h1 id="hmain">FOR GANGGANG</h1>
         <nav class="nav-cont">
-            <a href="#letter">Letter</a>
-            <a href="#music">Music</a>
+            <a href="#letter" class="smooth-scroll">Letter</a>
+            <a href="#music" class="smooth-scroll">Music</a>
         </nav>
 
         <p id="pmain">Website for my love❤️</p>
@@ -45,5 +57,7 @@
         </div>
     </div>
 
+    <script src="script.js"></script>
+    <script src="ss.js"></script>
 </body>
 </html>
