@@ -61,10 +61,9 @@ p {
 }
 
 #changeimg {
-    width: 120vw;
-    max-width: 20%; /* Cap max width */
-    height: auto; /* Maintain aspect ratio */
-    object-fit: cover; /* Ensure image fits without distortion */
+    max-width: 300px;
+    max-height: 400px;
+    object-fit: cover;
 }
 
 .countdown-cont {
@@ -83,7 +82,7 @@ p {
 }
 
 .music-cont {
-    margin-top: 100px;
+    margin-top: 200px;
     margin-bottom: 10px;
 }
 
@@ -107,9 +106,14 @@ p {
         margin-top: 155px; /* Consistent spacing */
     }
 
-    #changeimg, #letterimg, #musid {
+    #letterimg, #musid {
         width: 80vw; /* Slightly smaller on mobile */
         max-width: 300px; /* Adjust for smaller screens */
+    }
+
+    #changeimg {
+        max-width: 400px;
+        max-height: 400px;
     }
 
     .countdown-cont {
