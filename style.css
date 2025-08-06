@@ -13,7 +13,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #ffe4e1;
+    background-color: white; /* #ffe4e1 pink */
     font-family: 'cusfont', Arial, sans-serif;
     overflow-x: hidden;
 }
@@ -21,13 +21,29 @@ body {
 .main-cont {
     text-align: center;
     width: 100%;
-    max-width: 1200px; /* Limit max width for larger screens */
+    max-width: 1200px;
     padding: 20px;
     box-sizing: border-box;
 }
 
+.nav-cont {
+    margin-top: 10px;
+}
+
+.nav-cont a {
+    padding: 0 16px;
+    text-decoration: none;
+    color: black;
+    font-family: sans-serif;
+    font-size: 1.2rem;
+}
+
+.nav-cont a:hover {
+    text-decoration: underline;
+}
+
 h1 {
-    font-size: 2.5rem; /* Responsive font size */
+    font-size: 2.5rem; 
     margin: 20px 0;
 }
 
@@ -42,12 +58,12 @@ p {
 }
 
 #pmain {
-    margin-top: 0;
-    margin-bottom: 20px;
+    margin-top: 120px;
+    font-family: 'cusfont';
 }
 
 .img-cont {
-    margin-top: 20px;
+    margin-top: 50px;
 }
 
 #changeimg {
@@ -62,7 +78,7 @@ p {
 }
 
 .letter-cont {
-    margin-top: 200px; /* Reduced for mobile */
+    margin-top: 200px;
 }
 
 #letterimg {
@@ -82,23 +98,26 @@ p {
     object-fit: cover;
 }
 
+
 /* Media Queries for Mobile Devices */
 @media screen and (max-width: 768px) {
     h1 {
-        font-size: 1.8rem; /* Smaller headings on mobile */
+        font-size: 1.8rem;
     }
 
     p {
         font-size: 1rem;
     }
 
+
+
     .letter-cont, .music-cont {
-        margin-top: 155px; /* Consistent spacing */
+        margin-top: 155px;
     }
 
     #letterimg, #musid {
-        width: 80vw; /* Slightly smaller on mobile */
-        max-width: 300px; /* Adjust for smaller screens */
+        width: 80vw; 
+        max-width: 300px; 
     }
 
     #changeimg {
@@ -128,7 +147,4 @@ p {
         font-size: 0.9rem;
     }
 
-    .main-cont {
-        padding: 10px; /* Less padding on very small screens */
-    }
 }
