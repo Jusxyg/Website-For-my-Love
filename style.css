@@ -5,6 +5,17 @@
     font-style: normal;
 }
 
+:root{
+  --primary: #fff;
+  --bg-color: rgb(5, 53, 61);
+  --bg-envelope-color: #f5edd1;
+  --envelope-tab: #ecdeb8;
+  --envelope-cover: #e6cfa7;
+  --shadow-color: rgba(0, 0, 0, 0.2);
+  --txt-color: #444;
+  --heart-color: rgb(252, 8, 231);
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -12,7 +23,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #fff;
+    background-color: #ffe4e1;
     font-family: 'cusfont', Arial, sans-serif;
     overflow-x: hidden;
 }
@@ -30,10 +41,19 @@ h1 {
     margin: 20px 0;
 }
 
+#hmain {
+    margin: 0 0;
+}
+
 p {
     font-size: 1.2rem;
     margin: 10px 0;
     font-family: sans-serif;
+}
+
+#pmain {
+    margin-top: 0;
+    margin-bottom: 20px;
 }
 
 .img-cont {
@@ -49,7 +69,7 @@ p {
 
 .countdown-cont {
     margin-top: 20px;
-    
+
 }
 
 .letter-cont {
@@ -84,7 +104,7 @@ p {
     }
 
     .letter-cont, .music-cont {
-        margin-top: 150px; /* Consistent spacing */
+        margin-top: 155px; /* Consistent spacing */
     }
 
     #changeimg, #letterimg, #musid {
