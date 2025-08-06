@@ -1,7 +1,8 @@
 @font-face {
     font-family: 'cusfont';
-    src: url('font/myfont.otf') format('opentype'); /* Adjust path and format */
-
+    src: url('font/myfont.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 body {
@@ -12,38 +13,108 @@ body {
     align-items: center;
     min-height: 100vh;
     background-color: #fff;
-    font-family: 'cusfont', Arial;
+    font-family: 'cusfont', Arial, sans-serif;
+    overflow-x: hidden;
 }
 
-div {
+.main-cont {
     text-align: center;
+    width: 100%;
+    max-width: 1200px; /* Limit max width for larger screens */
+    padding: 20px;
+    box-sizing: border-box;
 }
 
+h1 {
+    font-size: 2.5rem; /* Responsive font size */
+    margin: 20px 0;
+}
+
+p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    font-family: sans-serif;
+}
 
 .img-cont {
     margin-top: 20px;
 }
 
 #changeimg {
-    max-width: 30%;
-    height: 30%;
+    width: 120vw;
+    max-width: 20%; /* Cap max width */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure image fits without distortion */
+}
+
+.countdown-cont {
+    margin-top: 20px;
+    
 }
 
 .letter-cont {
-    margin-top: 300px;
+    margin-top: 200px; /* Reduced for mobile */
 }
 
 #letterimg {
-    max-width: 55%;
-    height: 40%;
+    max-width: 500px;
+    height: auto;
+    object-fit: cover;
 }
 
 .music-cont {
-    margin-top: 250px;
-    margin-bottom: 100px;
+    margin-top: 100px;
+    margin-bottom: 10px;
 }
 
 #musid {
-    max-width: 55%;
-    height: 45%;
+    max-width: 25%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Media Queries for Mobile Devices */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 1.8rem; /* Smaller headings on mobile */
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .letter-cont, .music-cont {
+        margin-top: 150px; /* Consistent spacing */
+    }
+
+    #changeimg, #letterimg, #musid {
+        width: 80vw; /* Slightly smaller on mobile */
+        max-width: 300px; /* Adjust for smaller screens */
+    }
+
+    .countdown-cont {
+        margin-top: 30px;
+    }
+
+    #timer {
+        font-size: 1rem;
+    }
+
+    #timer span {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    .main-cont {
+        padding: 10px; /* Less padding on very small screens */
+    }
 }
