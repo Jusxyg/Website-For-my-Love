@@ -4,7 +4,12 @@ document.addEventListener('DOMContentLoaded', () => {
         "images/img (2).JPEG",
         "images/img (3).JPEG",
         "images/img (4).JPEG",
-        "images/img (5).JPEG"
+        "images/img (5).JPEG",
+        "images/img (6).JPEG",
+        "images/img (7).JPEG",
+        "images/img (8).JPEG",
+        "images/img (9).JPEG",
+        "images/img (10).JPEG"
     ];
     let currentImageIndex = 0;
     const imgElement = document.getElementById("changeimg");
