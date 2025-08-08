@@ -4,8 +4,6 @@
     font-weight: normal;
     font-style: normal;
 }
-
-
 body {
     margin: 0;
     padding: 0;
@@ -17,7 +15,6 @@ body {
     font-family: 'cusfont', Arial, sans-serif;
     overflow-x: hidden;
 }
-
 .main-cont {
     text-align: center;
     width: 100%;
@@ -25,11 +22,9 @@ body {
     padding: 20px;
     box-sizing: border-box;
 }
-
 .nav-cont {
     margin-top: 10px;
 }
-
 .nav-cont a {
     padding: 0 16px;
     text-decoration: none;
@@ -37,118 +32,131 @@ body {
     font-family: sans-serif;
     font-size: 1.2rem;
 }
-
 .nav-cont a:hover {
     text-decoration: underline;
 }
-
 h1 {
-    font-size: 2.5rem; 
+    font-size: 2.5rem;
     margin: 20px 0;
 }
-
 #hmain {
     margin: 0 0;
 }
-
 p {
     font-size: 1.2rem;
     margin: 10px 0;
     font-family: sans-serif;
 }
-
 #pmain {
     margin-top: 120px;
     font-family: 'cusfont';
 }
-
 #pmain2 {
     margin-top: 15px;
 }
-
 .img-cont {
     margin-top: 50px;
 }
-
 #changeimg {
     max-width: 400px;
     max-height: 500px;
     object-fit: cover;
 }
-
 .countdown-cont {
     margin-top: 20px;
-
 }
-
 .letter-cont {
     margin-top: 200px;
 }
-
 #letterimg {
     max-width: 500px;
     height: auto;
     object-fit: cover;
 }
-
 .music-cont {
     margin-top: 200px;
     margin-bottom: 10px;
 }
-
 #musid {
     max-width: 25%;
     height: auto;
     object-fit: cover;
 }
+.album-cont {
+    margin-top: 200px;
+}
+.album-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0;
+}
 
+.grid {
+    border: solid black; 
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
 
-/* Media Queries for Mobile Devices */
+}
+
+.grid img {
+    width: 170px;
+    height: 250px;
+    border-radius: 0;
+    vertical-align: top;
+    border-radius: 7px;
+    margin: 0;
+    padding: 0;
+}
+.grid:hover {
+    transform: scale(1.05);
+}
+
 @media screen and (max-width: 768px) {
     h1 {
         font-size: 1.8rem;
     }
-
     p {
         font-size: 1rem;
     }
-
-
-
-    .letter-cont, .music-cont {
+    .letter-cont, .music-cont, .gallery-cont {
         margin-top: 155px;
     }
-
     #letterimg, #musid {
-        width: 80vw; 
-        max-width: 300px; 
+        width: 80vw;
+        max-width: 300px;
     }
-
     #changeimg {
         max-width: 500px;
         max-height: 300px;
     }
-
     .countdown-cont {
         margin-top: 30px;
     }
-
     #timer {
         font-size: 1rem;
     }
-
     #timer span {
         font-size: 1rem;
+
+    .album-grid {
+        max-width: 300px; /* Adjusted for smaller screens */
+        grid-template-columns: repeat(2, 1fr); /* Stack into 2 columns on smaller screens */
     }
 }
-
 @media screen and (max-width: 480px) {
     h1 {
         font-size: 1.5rem;
     }
-
     p {
         font-size: 0.9rem;
     }
-
+    .album-grid {
+        max-width: 200px;
+        grid-template-columns: 1fr;
+    }
 }
