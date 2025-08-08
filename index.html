@@ -115,7 +115,43 @@
             </div>
         </div>
 
+        <div class="player">
+            <div class="player-track-meta">
+                <p>Palagi</p>
+                <p><span>TJxKZ Version</span></p>
+            </div>
+            <div class="player-controls">
+                <button class="player-play-btn" 
+                    role="button" 
+                    aria-label="Play"
+                    data-playing="false"
+                >
+            <div class="player-icon-play">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>play</title><polygon class="icon-play" points="19.05 12 6 3.36 6 20.64 19.05 12"/><rect class="icon-container" width="24" height="24"/></svg>
+            </div>
+      
+            <div class="player-icon-pause hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>pause</title><g><rect  class="icon-pause" x="6" y="3.26" width="4" height="17.48"/><rect class="icon-pause" x="14" y="3.26" width="4" height="17.48"/></g><rect class="icon-container" width="24" height="24"/></svg>
+            </div>
+            </button>
+            <div class="player-timeline">
+                <span class="player-time player-time-current">00:00</span>
+            <div class="player-progress">
+            <div class="player-progress-filled"></div>
+            </div>
+                <span class="player-time player-time-duration">00:00</span>
+            </div>
+            <div class="player-volume-container">
+                <input type="range" id="volume" min="0" max="1" value="1" step="0.01" class="player-volume" />
+            </div>
+  </div>
+  
+  <audio src="https://cf-media.sndcdn.com/DStKJizbBlGF.128.mp3?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLW1lZGlhLnNuZGNkbi5jb20vRFN0S0ppemJCbEdGLjEyOC5tcDMqIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNzU0NjUyMTMzfX19XX0_&Signature=QozwTQhV1GIQhGlu-WkAgleQTKwDh5-t6qRfb52Q2rqmCCT6NiD9cCd19X2CvXjPcyIeeGWYBaKoKA8YDQ7g-1fpikMJlv5KvOtHDyakcrs79p1zL2ArW4Sl2na2x37AYYPUOc3m2c315-6bACZ4ah492orYUq8FtTnE2EXuQFUKULxqDScK58lQ04NjbXz1w5yUlXaQADGerfOx6290PwBOl~gMs3eoT6ubIOYia-2dtSTk08KmPCoC04FwoO5U6ciVOxvo4ao-soEiMFjDkE-OQlO~WaZVf3ns~JzUFD7MwvfDgL6jWLRI2auicYbp4S8HpRXWrBiTXuVNcH13Pg__&Key-Pair-Id=APKAI6TU7MMXM5DG6EPQ" crossorigin="anonymous"></audio>
+  <script src="script.js"></script>
+</div>
+
     </div>
     <script src="script.js"></script>
+    <script src="music.js"></script>
 </body>
 </html>
