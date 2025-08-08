@@ -64,6 +64,8 @@ p {
 }
 .countdown-cont {
     margin-top: 20px;
+    font-family: sans-serif;
+    font-size: 1.2rem;
 }
 .letter-cont {
     margin-top: 200px;
@@ -144,8 +146,8 @@ p {
         font-size: 1rem;
 
     .album-grid {
-        max-width: 300px; /* Adjusted for smaller screens */
-        grid-template-columns: repeat(2, 1fr); /* Stack into 2 columns on smaller screens */
+        max-width: 300px;
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 @media screen and (max-width: 480px) {
@@ -156,7 +158,7 @@ p {
         font-size: 0.9rem;
     }
     .album-grid {
-        max-width: 200px;
+        max-width: 100px;
         grid-template-columns: 1fr;
     }
 }
