@@ -160,5 +160,7 @@ p {
     .album-grid {
         max-width: 100px;
         grid-template-columns: 1fr;
+        margin-left: 104px;
+        padding: 0;
     }
 }
