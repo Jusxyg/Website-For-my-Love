@@ -187,7 +187,7 @@ p {
 }
 .progress-bar {
     height: 100%;
-    background-color: #2ecc71;
+    background-color: black;
     width: 0;
     transition: width 0.3s ease;
 }
@@ -260,7 +260,7 @@ p {
         margin-left: 0;
     }
     .player-cont {
-        max-width: 95%;
+        max-width: 75%;
         padding: 10px;
     }
     .track-title {
