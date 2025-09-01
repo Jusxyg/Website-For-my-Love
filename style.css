@@ -81,11 +81,13 @@ p {
 .letter-cont {
     margin-top: 200px;
 }
-#letterimg {
-    max-width: 500px;
-    height: auto;
-    object-fit: cover;
-    border-radius: 10px;
+#letter-div {
+	border: 3px solid #333;
+	border-radius: 7px;
+}
+#letter-div p {
+	font-size: 1.3rem;
+	margin: 5%;
 }
 .music-cont {
     margin-top: 200px;
@@ -131,6 +133,7 @@ p {
 .hidden {
     display: none;
 }
+
 .player-cont {
     margin-top: 50px;
     padding: 20px;
