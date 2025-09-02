@@ -82,12 +82,23 @@ p {
     margin-top: 200px;
 }
 #letter-div {
-	border: 3px solid #333;
-	border-radius: 7px;
+    border: 3px solid #333;
+    border-radius: 7px;
 }
 #letter-div p {
-	font-size: 1.3rem;
-	margin: 5%;
+    font-size: 1.3rem;
+    margin: 5%;
+}
+.locked-message {
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
+.letter-content.hidden {
+    display: none;
+}
+.locked-message.hidden {
+    display: none;
 }
 .music-cont {
     margin-top: 200px;
@@ -133,7 +144,6 @@ p {
 .hidden {
     display: none;
 }
-
 .player-cont {
     margin-top: 50px;
     padding: 20px;

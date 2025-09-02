@@ -55,7 +55,26 @@ document.addEventListener('DOMContentLoaded', () => {
 
     setInterval(updateCountdown, 1000);
 
-    
+    const letterdate = new Date('September 2, 2025 00:00:00').getTime();
+    const letterContent = document.getElementById('letter-content');
+    const lockedMessage = document.getElementById('locked-message');
+
+    function letterupdateCountdown() {
+        const now = new Date().getTime();
+        const timeRemaining = letterdate - now;
+
+        if (timeRemaining <= 0) {;
+            letterContent.classList.remove('hidden');
+            lockedMessage.classList.add('hidden');
+            return;
+        }
+
+        letterContent.classList.add('hidden');
+        lockedMessage.classList.remove('hidden');
+    }
+
+    letterupdateCountdown();
+
     const links = document.querySelectorAll('.smooth-scroll');
     
     links.forEach(link => {
