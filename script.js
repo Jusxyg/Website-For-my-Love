@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     setInterval(updateCountdown, 1000);
 
-    const letterdate = new Date('September 2, 2025 00:00:00').getTime();
+    const letterdate = new Date('October 2, 2025 00:00:00').getTime();
     const letterContent = document.getElementById('letter-content');
     const lockedMessage = document.getElementById('locked-message');
 
